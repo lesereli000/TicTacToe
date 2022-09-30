@@ -81,6 +81,8 @@ public class TTT extends Frame implements ActionListener {
 								}
 							}
 							JOptionPane.showMessageDialog(null, "You Win!");
+						} else if (checkWin() == 3) {
+							JOptionPane.showMessageDialog(null, "Tie!");
 						} else {
 							comp();
 							if (checkWin() == 2) {
@@ -90,8 +92,6 @@ public class TTT extends Frame implements ActionListener {
 									}
 								}
 								JOptionPane.showMessageDialog(null, "You Lose!");
-							} else if (checkWin() == 3) {
-								JOptionPane.showMessageDialog(null, "Tie!");
 							}
 						}
 					}
